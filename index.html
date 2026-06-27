@@ -1,11 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>PetLife - Guia Definitivo de Cuidados para Pets</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
+
+  <!-- Cabeçalho simples com a logo-->
+   <header class="header">
+    <div class="container">
+      <span class="logo">🐾 PetLife</span>
+    </div>
+   </header>
+
+   <!-- Conteúdo Principal da Landig Page -->
+    <main>
+
+      <!-- Seção Hero: O primeiro contato do usuário -->
+       <section class="hero-section">
+        <div class="container hero-container">
+          <div class="hero-content">
+            <h1>O Guia Definitivo para Um Pet Feliz e Saudável</h1>
+            <p>Aprenda técnicas práticas de alimentação, rotina e bem-estar para dar a melhor vida ao seu melhor amigo. Baixe nosso e-book gratuito agora!</p>
+          </div>
+
+          <!-- Formulário de Conversão (O coração do MP) -->
+          <div class="form-container">
+            <h2>Garanta seu E-book Grátis</h2>
+
+            <form id="lead-form">
+              <div class="form-group">
+                <label for="name">Seu Nome</label>
+                <input type="text" id="name" placeholder="Ex: João Silva required">
+              </div>
+
+              <div class="form-group">
+                <label for="email">Seu Melhor E-mail</label>
+                <input type="email" id="email" placeholder="Ex: joao@email.com" required>
+              </div>
+
+              <button type="submit" class="btn-submit">Quero Receber o Guia</button>
+            </form>
+
+            <!-- Mensagem de Sucesso (Invisível por padrao via CSS) -->
+            <div id="sucess-message" class="sucess-message hidden">
+              <h3>🎉 Tudo pronto!</h3>
+              <p>Obrigado! Seu e-book foi enviado para o e-mail cadastrado.</p>
+            </div> 
+          </div>
+        </div>
+       </section>
+
+       <!-- Seção de Benefícios (Garante autoridade e interesse) -->
+       <section class="benefits-section">
+        <div class="container">
+          <h2>O que você vai aprender neste guia:</h2>
+          <div class="benefits-grid">
+            <div class="benefit-card">
+              <h3>🍏 Alimentação Natural</h3>
+              <p>Descubra petiscos suadáveis e o que você nunca deve dar ao seu pet.</p>
+            </div>
+            <div class="benefit-card">
+              <h3>🐕 Linguagem Corporal</h3>
+              <p>Entenda exatamente o que o seu cão ou gato quer te dizer com cada gesto.</p>
+            </div>
+            <div class="benefit-card">
+              <h3>🧠 Enriquecimento Ambiental</h3>
+              <p>Brincadeiras simples para gastar energia e evitar que eles destruam a casa.</p>
+            </div>
+          </div>
+        </div> 
+      </section>
+
+   </main>
+
+   <!-- Rodapé com direitos e links padrão -->
+   <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 PetLife. Todos os direitos reservados. Desenvolvido para Portfólio.</p>
+    </div>
+   </footer>
+   
+   <script src="script.js"></script>
 </body>
 </html>

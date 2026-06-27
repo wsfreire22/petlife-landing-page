@@ -1,0 +1,181 @@
+/* ==========================================
+   1. Variáveis e Resets Básicos
+   ========================================== */
+:root {
+  --primary-color: #4f46e5; /* Roxo moderno */
+  --primary-hover: #4338ca;
+  --sucess-color: #16a34a;  /* Verde para sucesso */
+  --text-color: #374151;    /* Cinza escuro legível */
+  --bg-light: #f9fafb;      /* Fundo suave */
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  color: var(--text-color);
+  background-color: var(--bg-light);
+  line-height: 1.5;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+/* ==========================================
+   2. Layout Base (Foco no Mobile)
+   ========================================== */
+.header {
+  background-color: var(--white);
+  border-bottom: 1px solid #e5e7eb;
+}   
+
+.logo {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+hero-section {
+  padding: 40px 0;
+  background: linear-gradient(135deg, #e0e7ff 0%, #ffffff 100%);
+}
+
+.hero-content h1 {
+  font-size: 2rem;
+  line-height: 1.2;
+  margin-bottom: 15px;
+  color: #111827;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+/* Formulário */
+.form-container {
+  background-color: var(--white);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0,0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.form-container h2 {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--primary-color);
+  color: var(--white);
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-submit:hover {
+  background-color: var(--primary-hover);
+}
+
+/* Mensagem de Sucesso Dinâmica */
+.success-message {
+  text-align: center;
+  background-color: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  padding: 20px;
+  border-radius: 8px;
+  color: var(--success-color);
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* Benefícios */
+.benefits-section {
+  padding: 60px 0;
+}
+
+.benefits-section h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.benefit-card {
+  background-color: var(--white);
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 3px rgba(0,0, 0, 0.05);
+}
+
+.footer {
+  background-color: #111827;
+  color: #9ca3af;
+  text-align: center;
+  font-size: 0.875rem;
+}
+
+/* ==========================================
+   3. Telas Grandes (Desktops)
+   ========================================== */
+@media (min-width: 768px) {
+  .hero-caontainer {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .hero-content {
+    flex: 1;
+  }
+
+  .form-container {
+    flex: 1;
+    margin-top: 0;
+  }
+
+  .benefits-grid {
+    display: flex;
+    gap: 20px;
+  }
+
+  .benefit-card {
+    flex: 1;
+    margin-bottom: 0;
+  }
+}   
