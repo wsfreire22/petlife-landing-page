@@ -10,10 +10,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // 2. Captura os dados digitados pelo usuário
     const nameInput = document.getElementById("name").value;
-    const emailInput = document.getElementById(email).value;
+    const emailInput = document.getElementById("email").value;
 
     // 3. Cria o objeto "Lead" que simula o que iria para o banco de dados
-    const newLoad = {
+    const newLead = {
       name: nameInput,
       email: emailInput,
       date: new Date().toISOString()

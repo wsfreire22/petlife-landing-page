@@ -4,7 +4,7 @@
 :root {
   --primary-color: #4f46e5; /* Roxo moderno */
   --primary-hover: #4338ca;
-  --sucess-color: #16a34a;  /* Verde para sucesso */
+  --success-color: #16a34a;  /* Verde para sucesso */
   --text-color: #374151;    /* Cinza escuro legível */
   --bg-light: #f9fafb;      /* Fundo suave */
   --white: #ffffff;
@@ -44,7 +44,7 @@ body {
   color: var(--primary-color);
 }
 
-hero-section {
+.hero-section {
   padding: 40px 0;
   background: linear-gradient(135deg, #e0e7ff 0%, #ffffff 100%);
 }
@@ -154,7 +154,7 @@ hero-section {
    3. Telas Grandes (Desktops)
    ========================================== */
 @media (min-width: 768px) {
-  .hero-caontainer {
+  .hero-container {
     display: flex;
     align-items: center;
     gap: 40px;
